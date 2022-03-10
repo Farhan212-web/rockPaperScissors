@@ -14,6 +14,7 @@ rulesButton.addEventListener('click', function() {
 
     cross.src = 'images/icon-close.svg';
     cross.classList.add('cross');
+
     ruleImg.classList.add('rule-img')
     ruleImg.src = 'images/image-rules.svg';
 
@@ -25,4 +26,15 @@ rulesButton.addEventListener('click', function() {
 
     rulesPopup.appendChild(ruleImg);
     body.classList.add('hidden-body');
+
+    cross.addEventListener('click', function() {
+        while(rulesTextDiv.firstChild) {
+            rulesTextDiv.removeChild(rulesTextDiv.firstChild);
+        }
+
+        rulesPopup.removeChild(rulesPopup.children[1]);
+
+    
+        body.classList.remove('hidden-body');
+    })
 });
