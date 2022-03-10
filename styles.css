@@ -4,15 +4,12 @@
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
-body {
-    height: 100vh;
-    width: 100vw;
+html, body {
+    height: 100%;
 }
 
-.game {
-    width: 100%;
-    background: radial-gradient(hsl(214, 47%, 23%),hsl(237, 49%, 15%));
-    height: 100%;
+body {
+    background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
     position: relative;
 }
 
@@ -26,8 +23,7 @@ body {
     left: 0;
     right: 0;
     top: 40px;
-    margin: auto
-
+    margin: 0 auto;
 }
 
 .title-text {
@@ -55,11 +51,51 @@ body {
     margin-top: 20px;
 }
 
-.component-body {
-    background-image: url('images/bg-triangle.svg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 50% 62%;
-    height: 300px;
-    padding: 200px;
+.board {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
+
+.component {
+    border: 1px solid white;
+    border-radius: 50%;
+    border-width: 25px;
+    background: white;
+}
+
+.rock {
+    position: absolute;
+    left: -15px;
+    top: -10px;
+    outline: 20px solid lightblue;
+}
+
+.paper {
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    outline: 20px solid orange;
+}
+
+.scissors {
+    position: absolute;
+    right: 35%;
+    bottom: 0;
+    outline: 20px solid red;
+}
+
+.rules {
+    color: white;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    background: none;
+    border: 1px solid white;
+    padding: 10px 25px;
+    font-size: 1vw;
+    border-radius: 8px;
+}
+
+
