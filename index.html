@@ -15,25 +15,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
 
   </head>
-  <body>
+  <body>  <!-- Add the brightness decrease class after pressing rules button-->
 
-    <section class="game">
-      <div class="header">
-        <div class="title-text">
-          <p>ROCK</p>
-          <p>PAPER</p>
-          <p>SCISSORS</p>
-        </div>
+    <div class="container">
+      <div class="game">
+        <div class="header">
+          <div class="title-text">
+            <p>ROCK</p>
+            <p>PAPER</p>
+            <p>SCISSORS</p>
+          </div>
 
-        <div class="scoreboard">
-          <div class="score-text">
-            <p class="score-marker">SCORE</p>
-            <p class="current-score">0</p>
+          <div class="scoreboard">
+            <div class="score-text">
+              <p class="score-marker">SCORE</p>
+              <p class="current-score">0</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="game-board">
         <div class="board">
           <img src="images/bg-triangle.svg">
 
@@ -49,14 +49,15 @@
             <img src="images/icon-scissors.svg">
           </button>
         </div>
+
+        <button class="rules">RULES</button>
       </div>
 
-      <button class="rules">RULES</button>
-
-      
+      <div class="rules-popup">
+        <div class="text-div"></div>
       </div>
 
-    </section>
+    </div>
 
 
     <script src="script.js"></script>
