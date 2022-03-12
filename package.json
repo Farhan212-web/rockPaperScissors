@@ -1,0 +1,24 @@
+{
+  "name": "rock-paper-scissors",
+  "version": "1.0.0",
+  "description": "Front end mentor rock paper scissors project",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Farhan212-web/rockPaperScissors.git"
+  },
+  "author": "Farhan Emad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Farhan212-web/rockPaperScissors/issues"
+  },
+  "homepage": "https://github.com/Farhan212-web/rockPaperScissors#readme",
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4"
+  }
+}
