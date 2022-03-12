@@ -1,0 +1,17 @@
+.highlighted-choice {
+    border: 1px solid white;
+    border-radius: 50%;
+    border-width: 45px;
+    background: white;
+}
+
+.gameplay {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+

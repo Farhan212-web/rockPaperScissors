@@ -2,6 +2,7 @@ const rulesButton = document.querySelector('.rules');
 const body = document.querySelector('.game');
 const rulesPopup = document.querySelector('.rules-popup');
 const rulesTextDiv = document.querySelector('.text-div');
+const options = document.querySelectorAll('.component');
 
 rulesButton.addEventListener('click', function() {
     if(rulesTextDiv.firstChild) {
@@ -31,10 +32,9 @@ rulesButton.addEventListener('click', function() {
         while(rulesTextDiv.firstChild) {
             rulesTextDiv.removeChild(rulesTextDiv.firstChild);
         }
-
+        
         rulesPopup.removeChild(rulesPopup.children[1]);
-
-    
         body.classList.remove('hidden-body');
     })
 });
+
