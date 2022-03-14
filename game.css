@@ -1,11 +1,25 @@
-.highlighted-choice {
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.player-choice {
     border: 1px solid white;
     border-radius: 50%;
-    border-width: 45px;
+    border-width: 100px;
     background: white;
 }
 
+.computer-choice {
+    border: 1px solid #423F3E;
+    border-radius: 50%;
+    border-width: 100px;
+    background: #423F3E;
+}
+
 .gameplay {
+    text-align: center;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -13,5 +27,11 @@
     display: flex;
     justify-content: space-between;
     width: 500px;
+}
+
+.choice-text {
+    padding-bottom: 80px;
+    font-size: 1.5vw;
+    color: white;
 }
 
