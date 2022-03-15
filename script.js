@@ -1,3 +1,7 @@
+import { playerImg } from './game.js';
+
+const webpack = require('webpack');
+
 const rulesButton = document.querySelector('.rules');
 
 const body = document.querySelector('.game');
@@ -5,6 +9,8 @@ const body = document.querySelector('.game');
 const rulesPopup = document.querySelector('.rules-popup');
 
 const rulesTextDiv = document.querySelector('.text-div');
+
+const gameOptions = document.querySelectorAll('.option');
 
 rulesButton.addEventListener('click', () => {
   if (rulesTextDiv.firstChild) {
@@ -37,5 +43,11 @@ rulesButton.addEventListener('click', () => {
 
     rulesPopup.removeChild(rulesPopup.children[1]);
     body.classList.remove('hidden-body');
+  });
+});
+
+gameOptions.forEach(item => {
+  item.addEventListener('click', () => {
+    playerImg.src = item.src;
   });
 });
