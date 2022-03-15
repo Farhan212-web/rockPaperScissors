@@ -1,7 +1,3 @@
-import { playerImg } from './game.js';
-
-const webpack = require('webpack');
-
 const rulesButton = document.querySelector('.rules');
 
 const body = document.querySelector('.game');
@@ -48,6 +44,6 @@ rulesButton.addEventListener('click', () => {
 
 gameOptions.forEach(item => {
   item.addEventListener('click', () => {
-    playerImg.src = item.src;
+    localStorage.setItem('optionImg', item.getAttribute('src'));
   });
 });

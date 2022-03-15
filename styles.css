@@ -45,7 +45,7 @@ body {
 
 .title-text {
     color: white;
-    font-size: 2vw;
+    font-size: 2rem;
     line-height: 1;
 }
 
@@ -57,11 +57,11 @@ body {
 }
 
 .current-score {
-    font-size: 3vw;
+    font-size: 3rem;
 }
 
 .score-marker {
-    font-size: 1.1vw;
+    font-size: 1.1rem;
 }
 
 .score-text {
@@ -102,6 +102,7 @@ body {
 }
 
 .scissors {
+    border-radius: 50%;
     position: absolute;
     right: 35%;
     bottom: 0;
@@ -157,6 +158,70 @@ body {
     width: 300px;
     padding: 80px;
     border-radius: 10px;
+}
+
+@media(max-width: 425px) {
+    .header {
+        width: 80%;
+    }
+
+    .title-text {
+        font-size: 4vw;
+    }
+
+    .board {
+        margin-top: 50px;
+    }
+
+    .score-marker {
+        font-size: 4vw;
+    }
+    
+    .scoreboard {
+        width: 30%;
+    }
+
+    .component {
+        border-width: 15px;
+    }
+
+    .current-score {
+        font-size: 4vw;
+    }
+
+    .rock {
+        outline: 10px solid lightblue;
+    }
+
+    .paper {
+        outline: 10px solid orange;
+    }
+
+    .scissors {
+        outline: 10px solid red
+    }
+
+    .rules {
+        font-size: 3vw;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        width: 30%;
+    }
+
+    .rule-img { 
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .text-div {
+        display: block;
+    }
+
+    .cross {
+        
+    }
+    
 }
 
 
