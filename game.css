@@ -12,10 +12,10 @@
 }
 
 .computer-choice {
-    border: 1px solid #423F3E;
+    border: 1px solid white;
     border-radius: 50%;
     border-width: 70px;
-    background: #423F3E;
+    background: white;
 }
 
 .gameplay {
@@ -56,6 +56,8 @@
     outline: 20px solid red;
     left: 0;
 }
+
+/* Repetition of classes is for correct positioning */
 
 .rock-comp {
     border-radius: 50%;
