@@ -8,6 +8,9 @@ const rulesTextDiv = document.querySelector('.text-div');
 
 const gameOptions = document.querySelectorAll('.option');
 
+const optionsArr = ['images/icon-scissors.svg', 'images/icon-paper.svg',
+  'images/icon-rock.svg'];
+
 rulesButton.addEventListener('click', () => {
   if (rulesTextDiv.firstChild) {
     return;
@@ -45,5 +48,11 @@ rulesButton.addEventListener('click', () => {
 gameOptions.forEach(item => {
   item.addEventListener('click', () => {
     localStorage.setItem('optionImg', item.getAttribute('src'));
+    const index = optionsArr.indexOf(item.getAttribute('src'));
+    optionsArr.splice(index, 1);
+
+    const randIndx = Math.floor(Math.random() * 2);
+    localStorage.setItem('compImg', optionsArr[randIndx]);
+    optionsArr.push(item.getAttribute('src'));
   });
 });
