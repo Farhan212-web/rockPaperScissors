@@ -8,6 +8,10 @@ const rulesTextDiv = document.querySelector('.text-div');
 
 const gameOptions = document.querySelectorAll('.option');
 
+const score = document.querySelector('.current-score');
+
+score.textContent = localStorage.getItem('theScore');
+
 const optionsArr = ['images/icon-scissors.svg', 'images/icon-paper.svg',
   'images/icon-rock.svg'];
 
