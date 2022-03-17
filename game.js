@@ -8,7 +8,7 @@ const playAgain = document.querySelector('.play-again');
 playerImg.src = localStorage.getItem('optionImg');
 compImg.src = localStorage.getItem('compImg');
 
-let num = 0;
+let num = parseInt(localStorage.getItem('theScore'), 10);
 
 function win() {
   const playButton = document.createElement('button');
@@ -57,11 +57,11 @@ if (playerImg.getAttribute('src') === 'images/icon-scissors.svg') {
 
   if (compImg.getAttribute('src') === 'images/icon-paper.svg') {
     num += 1;
-    scoreCount.textContent = num + 1;
+    scoreCount.textContent = num;
     win();
   } else {
     num -= 1;
-    scoreCount.textContent = num - 1;
+    scoreCount.textContent = num;
     lose();
   }
 } else if (playerImg.getAttribute('src') === 'images/icon-paper.svg') {
@@ -69,11 +69,11 @@ if (playerImg.getAttribute('src') === 'images/icon-scissors.svg') {
 
   if (compImg.getAttribute('src') === 'images/icon-rock.svg') {
     num += 1;
-    scoreCount.textContent = num + 1;
+    scoreCount.textContent = num;
     win();
   } else {
     num -= 1;
-    scoreCount.textContent = num - 1;
+    scoreCount.textContent = num;
     lose();
   }
 } else {
@@ -81,11 +81,11 @@ if (playerImg.getAttribute('src') === 'images/icon-scissors.svg') {
 
   if (compImg.getAttribute('src') === 'images/icon-scissors.svg') {
     num += 1;
-    scoreCount.textContent = num + 1;
+    scoreCount.textContent = num;
     win();
   } else {
     num -= 1;
-    scoreCount.textContent = num - 1;
+    scoreCount.textContent = num;
     lose();
   }
 }

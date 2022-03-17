@@ -126,3 +126,32 @@
     text-align: center;
     font-size: 1.2rem;
 }
+
+@media(max-width: 1152px) {
+    .player-choice {
+        border-width: 35px;
+    }
+
+    .computer-choice {
+        border-width: 35px;
+    }
+
+    .gameplay {
+        justify-content: right;
+        width: 400px;
+    }
+
+    .play-again {
+        position: relative;
+        right: 120px;
+        margin-top: 150px;
+    }
+
+    .p-image {
+        margin-left: 25px;
+    }
+
+    .c-image {
+        margin-right: 25px;
+    }
+}
