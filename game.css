@@ -26,25 +26,25 @@
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: space-between;
-    width: 700px;
+    width: 900px;
     padding: 20px;
-    margin-top: 90px;
-}
-
-.my-choice {
-    position: absolute;
-    left: -10px;
-}
-
-.opponent {
-    position: absolute;
-    right: -20px;
+    margin-top: 120px;
 }
 
 .choice-text {
     padding-bottom: 80px;
     font-size: 2rem;
     color: white;
+    position: relative;
+    right: 20px;
+}
+
+.computer-text {
+    padding-bottom: 80px;
+    font-size: 2rem;
+    color: white;
+    position: relative;
+    left: 20px;
 }
 
 .rock-choice {
@@ -67,7 +67,6 @@
     outline: 20px solid red;
     left: -10px;
 }
-
 
 
 /* Repetition of classes is for correct positioning */
@@ -106,13 +105,16 @@
     left: 35%;
     right: 40%;
     transform: (-50%, -50%);
-    width: 200px;
+    width: 300px;
 }
 
 .whiteText {
+    position: relative;
+    right: 22px;
     color: white;
     font-size: 3rem;
     padding-bottom: 20px;
+    width: 100%;
 }
 
 .reset-button {
@@ -127,6 +129,10 @@
     font-size: 1.2rem;
 }
 
+.winner {
+    box-shadow: 0 0 0 2em #FFF8, 0 0 0 4em #FFF4, 0 0 0 6em #FFF2;
+}
+
 @media(max-width: 1152px) {
     .player-choice {
         border-width: 35px;
@@ -137,8 +143,7 @@
     }
 
     .gameplay {
-        justify-content: right;
-        width: 400px;
+        width: 500px;
     }
 
     .play-again {

@@ -19,6 +19,7 @@ function win() {
   divText.classList.add('winText');
   winText.classList.add('whiteText');
   playButton.classList.add('reset-button');
+  myChoice.classList.add('winner');
 
   winText.textContent = 'YOU WIN';
   playButton.textContent = 'PLAY AGAIN';
@@ -40,6 +41,7 @@ function lose() {
   divText.classList.add('winText');
   winText.classList.add('whiteText');
   playButton.classList.add('reset-button');
+  compChoice.classList.add('winner');
 
   winText.textContent = 'YOU LOSE';
   playButton.textContent = 'PLAY AGAIN';

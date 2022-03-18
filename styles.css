@@ -116,7 +116,7 @@ body {
     background: none;
     border: 1px solid white;
     padding: 10px 25px;
-    font-size: 1vw;
+    font-size: 1.2rem;
     border-radius: 8px;
 }
 
@@ -136,7 +136,7 @@ body {
 .rule-header {
     position: relative;
     top: 60px;
-    font-size: 2vw;
+    font-size: 2rem;
     left: 40px;
 }
 
@@ -201,7 +201,7 @@ body {
     }
 
     .rules {
-        font-size: 3vw;
+     
         margin: 0 auto;
         left: 0;
         right: 0;
